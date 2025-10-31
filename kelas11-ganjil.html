@@ -19,15 +19,20 @@
       color: #f0f0f0;
       font-family: 'Poppins', sans-serif;
     }
-    .highlight {
-      color: #FFD700;
-    }
-    th {
+    .highlight { color: #FFD700; }
+    th { background-color: #FFD700; color: #0a1f44; }
+    tr:hover { background-color: rgba(255, 215, 0, 0.08); }
+    .btn {
       background-color: #FFD700;
       color: #0a1f44;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
     }
-    tr:hover {
-      background-color: rgba(255, 215, 0, 0.08);
+    .btn:hover {
+      background-color: #ffea7f;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -84,6 +89,7 @@
                 <th class="p-3 text-left">Bab / Unit</th>
                 <th class="p-3 text-left">Judul Materi</th>
                 <th class="p-3 text-left">Uraian Detail</th>
+                <th class="p-3 text-center">Akses</th>
               </tr>
             </thead>
             <tbody>
@@ -91,51 +97,46 @@
                 <td class="p-3">1</td>
                 <td class="p-3 font-semibold">Konsep Kreativitas dan Growth Mindset</td>
                 <td class="p-3">Pengertian kreativitas, pentingnya berpikir kreatif, ciri orang kreatif, hubungan kreativitas dengan kewirausahaan, dan latihan membangun pola pikir berkembang.</td>
+                <td class="p-3 text-center">
+                  <a href="#materi1" class="btn">📖 Buka Materi</a>
+                </td>
               </tr>
               <tr class="border-t border-yellow-500">
                 <td class="p-3">2</td>
                 <td class="p-3 font-semibold">Menumbuhkan Karakter Wirausaha</td>
                 <td class="p-3">Nilai-nilai dasar seperti mandiri, berani, jujur, pantang menyerah, dan kreatif; serta refleksi diri melalui proyek mini.</td>
+                <td class="p-3 text-center text-gray-500">🔒</td>
               </tr>
               <tr class="border-t border-yellow-500">
                 <td class="p-3">3</td>
                 <td class="p-3 font-semibold">Eksplorasi Ide dan Peluang dari Lingkungan</td>
                 <td class="p-3">Identifikasi masalah di sekitar, teknik eksplorasi ide seperti <em>brainstorming</em> dan <em>mind mapping</em>, serta penilaian ide berdasarkan keunikan dan peluang pasar.</td>
-              </tr>
-              <tr class="border-t border-yellow-500">
-                <td class="p-3">4</td>
-                <td class="p-3 font-semibold">Analisis Peluang Usaha Sederhana</td>
-                <td class="p-3">Analisis SWOT sederhana untuk menilai kekuatan, kelemahan, peluang, dan ancaman ide usaha.</td>
-              </tr>
-              <tr class="border-t border-yellow-500">
-                <td class="p-3">5</td>
-                <td class="p-3 font-semibold">Pengembangan Ide Menjadi Gagasan Usaha</td>
-                <td class="p-3">Mengolah ide kreatif menjadi produk atau jasa, menentukan target pasar dan nilai jual, serta membuat simulasi ide produk sederhana.</td>
+                <td class="p-3 text-center text-gray-500">🔒</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <!-- Kegiatan -->
-      <div class="bg-[#122b55] p-6 rounded-2xl shadow-lg mb-8">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-3">🧠 Kegiatan Pembelajaran</h3>
-        <ul class="list-disc pl-6 space-y-2 text-gray-200">
-          <li>Studi Kasus Ide Bisnis Lokal — menganalisis usaha kecil sekitar sekolah.</li>
-          <li>Diskusi Kelompok Kreatif — *brainstorming* ide usaha baru.</li>
-          <li>Refleksi Karakter Wirausaha — menulis refleksi pribadi tentang sikap wirausaha.</li>
-          <li>Proyek Mini: “Temukan 1 Ide Produk dari Masalah di Lingkungan Sekolah.”</li>
-        </ul>
-      </div>
+      <!-- ====== MATERI 1 DETAIL ====== -->
+      <div id="materi1" class="bg-[#173366] p-8 rounded-2xl shadow-xl mb-10" data-aos="fade-up">
+        <h3 class="text-3xl font-bold text-yellow-400 mb-4">📖 BAB 1: Konsep Kreativitas dan Growth Mindset</h3>
+        <p class="text-gray-100 mb-3">
+          Kreativitas merupakan kemampuan seseorang untuk melahirkan ide baru, solusi unik, atau pendekatan berbeda terhadap suatu masalah.
+          Dalam konteks kewirausahaan, kreativitas menjadi kunci utama untuk berinovasi dan menciptakan nilai tambah.
+        </p>
 
-      <!-- Penilaian -->
-      <div class="bg-[#122b55] p-6 rounded-2xl shadow-lg mb-8">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-3">📋 Penilaian</h3>
-        <ul class="list-disc pl-6 space-y-2 text-gray-200">
-          <li><strong>Pengetahuan:</strong> Memahami konsep kreativitas dan kewirausahaan.</li>
-          <li><strong>Keterampilan:</strong> Merancang ide usaha sederhana berbasis lingkungan.</li>
-          <li><strong>Sikap:</strong> Menunjukkan semangat, kerja sama, dan tanggung jawab.</li>
+        <ul class="list-decimal pl-6 text-gray-200 space-y-2">
+          <li><strong>Pengertian Kreativitas:</strong> kemampuan berpikir secara bebas, menghasilkan ide baru yang bermanfaat.</li>
+          <li><strong>Pentingnya Berpikir Kreatif:</strong> membantu wirausaha menemukan solusi inovatif dan peluang baru di tengah tantangan.</li>
+          <li><strong>Ciri-ciri Orang Kreatif:</strong> ingin tahu, terbuka, berani mencoba, tidak takut gagal, dan selalu mencari cara baru.</li>
+          <li><strong>Hubungan Kreativitas & Kewirausahaan:</strong> wirausaha sukses memanfaatkan kreativitas untuk menciptakan produk yang unik dan relevan.</li>
+          <li><strong>Latihan Growth Mindset:</strong> ubah pola pikir dari “tidak bisa” menjadi “belum bisa”, fokus pada proses belajar dan perbaikan terus-menerus.</li>
         </ul>
+
+        <div class="mt-6">
+          <a href="#materi" class="btn">⬆️ Kembali ke Struktur Materi</a>
+        </div>
       </div>
 
       <!-- Refleksi -->
