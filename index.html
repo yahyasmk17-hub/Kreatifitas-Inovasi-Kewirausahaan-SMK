@@ -3,95 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kreativitas, Inovasi, & Kewirausahaan (KIK) | SMK Agustus 1945 Tegaldlimo</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Kreativitas, Inovasi, & Kewirausahaan | SMK 17 Tegaldlimo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; }
+
+    /* Warna utama */
+    :root {
+      --biru-tua: #003366;
+      --emas: #FFD700;
+      --biru-gelap: #002B5B;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky; top: 0; z-index: 50;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    header img {
+      width: 50px; height: 50px; border-radius: 50%; object-fit: contain;
+    }
+
+    nav a {
+      color: #1E293B; text-decoration: none; font-weight: 600;
+      margin-left: 1.5rem; transition: color 0.3s;
+    }
+    nav a:hover { color: var(--biru-tua); }
+
+    .menu-toggle { display: none; cursor: pointer; }
+
+    /* Hero Section */
+    .hero {
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      padding: 4rem 1.5rem;
+      background: linear-gradient(to bottom, #EAF2FF, #F8FAFC);
+    }
+
+    .hero h2 {
+      font-size: 2rem; color: var(--biru-tua); font-weight: 800; margin-bottom: 1rem;
+    }
+
+    .hero p { font-size: 1.1rem; color: #475569; max-width: 600px; margin-bottom: 2rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary { background: var(--biru-tua); color: white; }
+    .btn-primary:hover { background: var(--biru-gelap); }
+    .btn-outline { border: 2px solid var(--biru-tua); color: var(--biru-tua); }
+    .btn-outline:hover { background: #E0ECFF; }
+
+    .hero img {
+      width: 180px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-top: 2rem;
+    }
+
+    /* Materi Section */
+    section { padding: 4rem 1.5rem; }
+    h3 { text-align: center; color: var(--biru-tua); margin-bottom: 2rem; font-size: 1.75rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white; border-radius: 16px;
+      border: 2px solid #E0ECFF;
+      padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+      opacity: 0; transform: translateY(30px);
+    }
+
+    .card.visible { opacity: 1; transform: translateY(0); transition: all 0.6s ease; }
+
+    .card h4 { color: var(--biru-tua); margin-bottom: 0.5rem; }
+
+    /* Modul & Kontak */
+    #modul p, #kontak p { color: #475569; max-width: 700px; margin: 0 auto 1.5rem; text-align: center; }
+
+    /* Footer */
+    footer {
+      background: var(--biru-tua);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      nav { display: none; flex-direction: column; }
+      nav.active { display: flex; position: absolute; top: 70px; left: 0; right: 0; background: white; padding: 1rem 0; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+      nav a { margin: 0.5rem 0; }
+      .menu-toggle { display: block; font-size: 1.5rem; }
+    }
+  </style>
 </head>
 
-<body class="font-sans bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen flex flex-col">
-
+<body>
   <!-- Header -->
-  <header class="flex items-center justify-between px-4 sm:px-12 py-4 bg-white shadow-md sticky top-0 z-50">
-    <div class="flex items-center space-x-3">
-      <img src="https://i.ibb.co.com/TDZ80yjQ/download.jpg" alt="Logo SMK" class="w-12 h-12 rounded-full object-contain" />
-      <h1 class="text-xl sm:text-2xl font-bold text-blue-700">Kreativitas, Inovasi, & Kewirausahaan</h1>
+  <header>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="https://i.ibb.co.com/TDZ80yjQ/download.jpg" alt="Logo SMK 17 Tegaldlimo">
+      <h1 style="font-size:1.25rem; color:var(--biru-tua); font-weight:700;">Kreativitas, Inovasi, & Kewirausahaan</h1>
     </div>
-    <button id="menu-toggle" class="sm:hidden focus:outline-none">
-      <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-    <nav id="menu" class="hidden sm:flex space-x-6 text-gray-600 font-medium">
-      <a href="#materi" class="block py-2 hover:text-blue-700">Lihat Materi</a>
-      <a href="#modul" class="block py-2 hover:text-blue-700">Unduh Modul</a>
-      <a href="#kontak" class="block py-2 hover:text-blue-700">Hubungi Guru KIK</a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav">
+      <a href="#materi">Lihat Materi</a>
+      <a href="#modul">Unduh Modul</a>
+      <a href="#kontak">Hubungi Guru KIK</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="flex flex-col sm:flex-row items-center justify-center py-12 px-6 sm:px-16 text-center sm:text-left">
-    <div class="sm:w-1/2" data-aos="fade-up">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-800 mb-4">Mata Pelajaran KIK Kelas XI & XII</h2>
-      <p class="text-lg text-gray-600 mb-6">Menumbuhkan jiwa kreatif, inovatif, dan wirausaha siswa SMK melalui pembelajaran berbasis proyek dan pemecahan masalah nyata.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-        <a href="#materi" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Lihat Materi</a>
-        <a href="#modul" class="border border-blue-600 text-blue-700 px-5 py-2 rounded-lg hover:bg-blue-50 transition">Unduh Modul</a>
-      </div>
+  <section class="hero">
+    <h2>Mata Pelajaran KIK Kelas XI & XII</h2>
+    <p>Menumbuhkan jiwa kreatif, inovatif, dan wirausaha siswa SMK 17 Tegaldlimo melalui pembelajaran berbasis proyek dan pemecahan masalah nyata.</p>
+    <div>
+      <a href="#materi" class="btn btn-primary">Lihat Materi</a>
+      <a href="#modul" class="btn btn-outline">Unduh Modul</a>
     </div>
-    <img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK" class="w-56 sm:w-72 mt-8 sm:mt-0 rounded-full shadow-lg object-cover" data-aos="fade-left" />
+    <img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK">
   </section>
 
   <!-- Materi Section -->
-  <section id="materi" class="py-12 px-6 sm:px-16 bg-blue-50">
-    <h3 class="text-2xl font-bold text-center text-blue-700 mb-8" data-aos="fade-up">Struktur Materi Kelas XI & XII</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up">
-        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XI Ganjil</h4>
-        <p class="text-sm text-gray-600">Menumbuhkan kreativitas, growth mindset, dan karakter wirausaha.</p>
-      </div>
-      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XI Genap</h4>
-        <p class="text-sm text-gray-600">Mengembangkan ide menjadi inovasi melalui design thinking dan prototipe produk.</p>
-      </div>
-      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
-        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XII Ganjil</h4>
-        <p class="text-sm text-gray-600">Menyusun business plan, pemasaran digital, dan pengelolaan keuangan usaha.</p>
-      </div>
-      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
-        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XII Genap</h4>
-        <p class="text-sm text-gray-600">Menjalankan, mengevaluasi, dan mengembangkan usaha secara berkelanjutan.</p>
-      </div>
+  <section id="materi">
+    <h3>Struktur Materi Kelas XI & XII</h3>
+    <div class="grid">
+      <div class="card"><h4>Kelas XI Ganjil</h4><p>Konsep kreativitas, growth mindset, dan pengenalan inovasi dalam dunia wirausaha.</p></div>
+      <div class="card"><h4>Kelas XI Genap</h4><p>Perencanaan usaha, riset pasar, dan pembuatan proposal bisnis berbasis digital.</p></div>
+      <div class="card"><h4>Kelas XII Ganjil</h4><p>Pengembangan produk dan strategi pemasaran kreatif untuk usaha siswa.</p></div>
+      <div class="card"><h4>Kelas XII Genap</h4><p>Implementasi bisnis, evaluasi kinerja, dan presentasi hasil proyek kewirausahaan.</p></div>
     </div>
   </section>
 
   <!-- Modul Section -->
-  <section id="modul" class="py-12 px-6 sm:px-16 text-center">
-    <h3 class="text-2xl font-bold text-blue-700 mb-6" data-aos="fade-up">Unduh Modul Pembelajaran</h3>
-    <p class="text-gray-600 mb-6" data-aos="fade-up" data-aos-delay="100">Dapatkan modul ajar lengkap Kelas XI & XII dalam format PDF untuk pembelajaran mandiri dan proyek kreatif.</p>
-    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="200">📘 Unduh Sekarang</a>
+  <section id="modul">
+    <h3>Unduh Modul Pembelajaran</h3>
+    <p>Dapatkan modul ajar lengkap Kelas XI & XII dalam format PDF untuk pembelajaran mandiri dan proyek kreatif.</p>
+    <a href="#" class="btn btn-primary">📘 Unduh Sekarang</a>
   </section>
 
   <!-- Kontak Section -->
-  <section id="kontak" class="py-12 px-6 sm:px-16 bg-blue-50 text-center">
-    <h3 class="text-2xl font-bold text-blue-700 mb-4" data-aos="fade-up">Hubungi Guru KIK</h3>
-    <p class="text-gray-600 mb-6" data-aos="fade-up" data-aos-delay="100">Untuk pertanyaan, bimbingan, atau kolaborasi proyek, silakan hubungi guru mata pelajaran KIK melalui tautan berikut.</p>
-    <a href="mailto:guru.kik@smk17tegaldlimo.sch.id" class="border border-blue-600 text-blue-700 px-6 py-3 rounded-lg hover:bg-blue-100 transition" data-aos="fade-up" data-aos-delay="200">✉️ Kirim Pesan</a>
+  <section id="kontak" style="background:#EAF2FF;">
+    <h3>Hubungi Guru KIK</h3>
+    <p>Untuk pertanyaan, bimbingan, atau kolaborasi proyek, silakan hubungi guru mata pelajaran KIK melalui tautan berikut.</p>
+    <a href="mailto:guru.kik@smk17tegaldlimo.sch.id" class="btn btn-outline">✉️ Kirim Pesan</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-700 text-white text-center py-4 mt-auto">
-    <p class="text-sm">© 2025 SMK Agustus 1945 Tegaldlimo | Mata Pelajaran Kreativitas, Inovasi, & Kewirausahaan</p>
+  <footer>
+    © 2025 SMK 17 Tegaldlimo | Mata Pelajaran Kreativitas, Inovasi, & Kewirausahaan
   </footer>
 
-  <!-- Script -->
   <script>
-    AOS.init();
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
+    function toggleMenu() {
+      document.getElementById("nav").classList.toggle("active");
+    }
+
+    // Efek fade-in scroll
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
   </script>
 </body>
 </html>
