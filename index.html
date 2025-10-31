@@ -1,77 +1,97 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kreativitas, Inovasi, & Kewirausahaan (KIK) | SMK Agustus 1945 Tegaldlimo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
 
-export default function KIKLandingPage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  return (
-    <div className="font-sans bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen flex flex-col">
-      {/* Header */}
-      <header className="flex items-center justify-between px-4 sm:px-12 py-4 bg-white shadow-md sticky top-0 z-50">
-        <div className="flex items-center space-x-3">
-          <img src="https://i.ibb.co.com/TDZ80yjQ/download.jpg" alt="Logo SMK" className="w-12 h-12 rounded-full object-contain" />
-          <h1 className="text-xl sm:text-2xl font-bold text-blue-700">Kreativitas, Inovasi, & Kewirausahaan</h1>
-        </div>
-        <div className="sm:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </div>
-        <nav className={`sm:flex space-x-6 text-gray-600 font-medium ${menuOpen ? "block absolute bg-white top-16 left-0 w-full shadow-md p-4" : "hidden sm:block"}`}>
-          <a href="#materi" className="block py-2 hover:text-blue-700">Lihat Materi</a>
-          <a href="#modul" className="block py-2 hover:text-blue-700">Unduh Modul</a>
-          <a href="#kontak" className="block py-2 hover:text-blue-700">Hubungi Guru KIK</a>
-        </nav>
-      </header>
+<body class="font-sans bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen flex flex-col">
 
-      {/* Hero Section */}
-      <section className="flex flex-col sm:flex-row items-center justify-center py-12 px-6 sm:px-16 text-center sm:text-left">
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="sm:w-1/2">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-800 mb-4">Mata Pelajaran KIK Kelas XI & XII</h2>
-          <p className="text-lg text-gray-600 mb-6">Menumbuhkan jiwa kreatif, inovatif, dan wirausaha siswa SMK melalui pembelajaran berbasis proyek dan pemecahan masalah nyata.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-            <Button className="bg-blue-600 text-white hover:bg-blue-700">Lihat Materi</Button>
-            <Button variant="outline" className="border-blue-600 text-blue-700 hover:bg-blue-50">Unduh Modul</Button>
-          </div>
-        </motion.div>
-        <motion.img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK" className="w-56 sm:w-72 mt-8 sm:mt-0 rounded-full shadow-lg object-cover" initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} />
-      </section>
-
-      {/* Materi Section */}
-      <section id="materi" className="py-12 px-6 sm:px-16 bg-blue-50">
-        <motion.h3 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-2xl font-bold text-center text-blue-700 mb-8">Struktur Materi Kelas XI & XII</motion.h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["Kelas XI Ganjil", "Kelas XI Genap", "Kelas XII Ganjil", "Kelas XII Genap"].map((semester, index) => (
-            <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.2 }}>
-              <Card className="shadow-md hover:shadow-lg transition rounded-2xl overflow-hidden border border-blue-100">
-                <CardContent className="p-6">
-                  <h4 className="text-lg font-semibold text-blue-700 mb-3">{semester}</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">Materi mencakup kreativitas, inovasi, perencanaan usaha, dan pengembangan bisnis berkelanjutan sesuai tahapan kelas.</p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Modul Section */}
-      <section id="modul" className="py-12 px-6 sm:px-16 text-center">
-        <motion.h3 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} className="text-2xl font-bold text-blue-700 mb-6">Unduh Modul Pembelajaran</motion.h3>
-        <p className="text-gray-600 mb-6">Dapatkan modul ajar lengkap Kelas XI & XII dalam format PDF untuk pembelajaran mandiri dan proyek kreatif.</p>
-        <Button className="bg-blue-600 text-white hover:bg-blue-700">📘 Unduh Sekarang</Button>
-      </section>
-
-      {/* Kontak Section */}
-      <section id="kontak" className="py-12 px-6 sm:px-16 bg-blue-50 text-center">
-        <motion.h3 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} className="text-2xl font-bold text-blue-700 mb-4">Hubungi Guru KIK</motion.h3>
-        <p className="text-gray-600 mb-6">Untuk pertanyaan, bimbingan, atau kolaborasi proyek, silakan hubungi guru mata pelajaran KIK melalui tautan berikut.</p>
-        <Button variant="outline" className="border-blue-600 text-blue-700 hover:bg-blue-100">✉️ Kirim Pesan</Button>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-blue-700 text-white text-center py-4 mt-auto">
-        <p className="text-sm">© 2025 SMK Agustus 1945 Tegaldlimo | Mata Pelajaran Kreativitas, Inovasi, & Kewirausahaan</p>
-      </footer>
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 sm:px-12 py-4 bg-white shadow-md sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <img src="https://i.ibb.co.com/TDZ80yjQ/download.jpg" alt="Logo SMK" class="w-12 h-12 rounded-full object-contain" />
+      <h1 class="text-xl sm:text-2xl font-bold text-blue-700">Kreativitas, Inovasi, & Kewirausahaan</h1>
     </div>
-  );
-}
+    <button id="menu-toggle" class="sm:hidden focus:outline-none">
+      <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <nav id="menu" class="hidden sm:flex space-x-6 text-gray-600 font-medium">
+      <a href="#materi" class="block py-2 hover:text-blue-700">Lihat Materi</a>
+      <a href="#modul" class="block py-2 hover:text-blue-700">Unduh Modul</a>
+      <a href="#kontak" class="block py-2 hover:text-blue-700">Hubungi Guru KIK</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col sm:flex-row items-center justify-center py-12 px-6 sm:px-16 text-center sm:text-left">
+    <div class="sm:w-1/2" data-aos="fade-up">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-800 mb-4">Mata Pelajaran KIK Kelas XI & XII</h2>
+      <p class="text-lg text-gray-600 mb-6">Menumbuhkan jiwa kreatif, inovatif, dan wirausaha siswa SMK melalui pembelajaran berbasis proyek dan pemecahan masalah nyata.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+        <a href="#materi" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Lihat Materi</a>
+        <a href="#modul" class="border border-blue-600 text-blue-700 px-5 py-2 rounded-lg hover:bg-blue-50 transition">Unduh Modul</a>
+      </div>
+    </div>
+    <img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK" class="w-56 sm:w-72 mt-8 sm:mt-0 rounded-full shadow-lg object-cover" data-aos="fade-left" />
+  </section>
+
+  <!-- Materi Section -->
+  <section id="materi" class="py-12 px-6 sm:px-16 bg-blue-50">
+    <h3 class="text-2xl font-bold text-center text-blue-700 mb-8" data-aos="fade-up">Struktur Materi Kelas XI & XII</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up">
+        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XI Ganjil</h4>
+        <p class="text-sm text-gray-600">Menumbuhkan kreativitas, growth mindset, dan karakter wirausaha.</p>
+      </div>
+      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XI Genap</h4>
+        <p class="text-sm text-gray-600">Mengembangkan ide menjadi inovasi melalui design thinking dan prototipe produk.</p>
+      </div>
+      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XII Ganjil</h4>
+        <p class="text-sm text-gray-600">Menyusun business plan, pemasaran digital, dan pengelolaan keuangan usaha.</p>
+      </div>
+      <div class="bg-white shadow-md rounded-2xl border border-blue-100 p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="text-lg font-semibold text-blue-700 mb-3">Kelas XII Genap</h4>
+        <p class="text-sm text-gray-600">Menjalankan, mengevaluasi, dan mengembangkan usaha secara berkelanjutan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modul Section -->
+  <section id="modul" class="py-12 px-6 sm:px-16 text-center">
+    <h3 class="text-2xl font-bold text-blue-700 mb-6" data-aos="fade-up">Unduh Modul Pembelajaran</h3>
+    <p class="text-gray-600 mb-6" data-aos="fade-up" data-aos-delay="100">Dapatkan modul ajar lengkap Kelas XI & XII dalam format PDF untuk pembelajaran mandiri dan proyek kreatif.</p>
+    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="200">📘 Unduh Sekarang</a>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="py-12 px-6 sm:px-16 bg-blue-50 text-center">
+    <h3 class="text-2xl font-bold text-blue-700 mb-4" data-aos="fade-up">Hubungi Guru KIK</h3>
+    <p class="text-gray-600 mb-6" data-aos="fade-up" data-aos-delay="100">Untuk pertanyaan, bimbingan, atau kolaborasi proyek, silakan hubungi guru mata pelajaran KIK melalui tautan berikut.</p>
+    <a href="mailto:guru.kik@smk17tegaldlimo.sch.id" class="border border-blue-600 text-blue-700 px-6 py-3 rounded-lg hover:bg-blue-100 transition" data-aos="fade-up" data-aos-delay="200">✉️ Kirim Pesan</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-auto">
+    <p class="text-sm">© 2025 SMK Agustus 1945 Tegaldlimo | Mata Pelajaran Kreativitas, Inovasi, & Kewirausahaan</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    AOS.init();
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
