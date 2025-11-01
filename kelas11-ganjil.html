@@ -39,6 +39,19 @@
     .section {
       scroll-margin-top: 80px;
     }
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .hero-container {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+      }
+    }
   </style>
 </head>
 
@@ -62,10 +75,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="text-center py-32 bg-[#0c2552] section" data-aos="fade-up">
-    <img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK" class="mx-auto w-28 h-28 rounded-full border-4 border-yellow-400 shadow-lg mb-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-3">KREATIVITAS, INOVASI, DAN KEWIRAUSAHAAN</h2>
-    <p class="text-gray-300 text-lg">Kelas XI – Semester Ganjil | SMK 17 Tegaldlimo</p>
+  <section id="hero" class="py-32 bg-[#0c2552] section" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <div class="hero-container">
+        <div class="md:mr-8 mb-6 md:mb-0">
+          <img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK" class="w-28 h-28 rounded-full border-4 border-yellow-400 shadow-lg mx-auto md:mx-0">
+        </div>
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-3">KREATIVITAS, INOVASI, DAN KEWIRAUSAHAAN</h2>
+          <p class="text-gray-300 text-lg">Kelas XI – Semester Ganjil | SMK 17 Tegaldlimo</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Materi -->
@@ -112,37 +133,38 @@
                 <td class="p-3">2</td>
                 <td class="p-3 font-semibold">Menumbuhkan Karakter Wirausaha</td>
                 <td class="p-3">Nilai-nilai dasar seperti mandiri, berani, jujur, pantang menyerah, dan kreatif; serta refleksi diri melalui proyek mini.</td>
-                <td class="p-3 text-center text-gray-500">🔒</td>
+                <td class="p-3 text-center">
+                  <a href="bab2_karakter_wirausaha.html" class="btn">📖 Buka Materi</a>
+                </td>
               </tr>
               <tr class="border-t border-yellow-500">
                 <td class="p-3">3</td>
                 <td class="p-3 font-semibold">Eksplorasi Ide dan Peluang dari Lingkungan</td>
                 <td class="p-3">Identifikasi masalah di sekitar, teknik eksplorasi ide seperti <em>brainstorming</em> dan <em>mind mapping</em>, serta penilaian ide berdasarkan keunikan dan peluang pasar.</td>
-                <td class="p-3 text-center text-gray-500">🔒</td>
+                <td class="p-3 text-center">
+                  <a href="bab3_eksplorasi_ide.html" class="btn">📖 Buka Materi</a>
+                </td>
+              </tr>
+              <!-- POINT 4 YANG DITAMBAHKAN -->
+              <tr class="border-t border-yellow-500">
+                <td class="p-3">4</td>
+                <td class="p-3 font-semibold">Analisis Peluang Usaha Sederhana</td>
+                <td class="p-3">Pengertian peluang usaha dan faktor-faktor yang mempengaruhinya, analisis SWOT sederhana, dan kriteria peluang usaha yang baik.</td>
+                <td class="p-3 text-center">
+                  <a href="bab4_analisis_peluang_usaha.html" class="btn">📖 Buka Materi</a>
+                </td>
+              </tr>
+              <!-- POINT 5 YANG DITAMBAHKAN -->
+              <tr class="border-t border-yellow-500">
+                <td class="p-3">5</td>
+                <td class="p-3 font-semibold">Pengembangan Ide Menjadi Gagasan Usaha Awal</td>
+                <td class="p-3">Mengolah ide kreatif menjadi konsep produk atau jasa, penentuan target pasar, dan simulasi sederhana merancang ide produk/jasa.</td>
+                <td class="p-3 text-center">
+                  <a href="bab5_pengembangan_ide.html" class="btn">📖 Buka Materi</a>
+                </td>
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-
-      <!-- ====== MATERI 1 DETAIL ====== -->
-      <div id="bab1" class="bg-[#173366] p-8 rounded-2xl shadow-xl mb-10 section" data-aos="fade-up">
-        <h3 class="text-3xl font-bold text-yellow-400 mb-4">📖 BAB 1: Konsep Kreativitas dan Growth Mindset</h3>
-        <p class="text-gray-100 mb-3">
-          Kreativitas merupakan kemampuan seseorang untuk melahirkan ide baru, solusi unik, atau pendekatan berbeda terhadap suatu masalah.
-          Dalam konteks kewirausahaan, kreativitas menjadi kunci utama untuk berinovasi dan menciptakan nilai tambah.
-        </p>
-
-        <ul class="list-decimal pl-6 text-gray-200 space-y-2">
-          <li><strong>Pengertian Kreativitas:</strong> kemampuan berpikir secara bebas, menghasilkan ide baru yang bermanfaat.</li>
-          <li><strong>Pentingnya Berpikir Kreatif:</strong> membantu wirausaha menemukan solusi inovatif dan peluang baru di tengah tantangan.</li>
-          <li><strong>Ciri-ciri Orang Kreatif:</strong> ingin tahu, terbuka, berani mencoba, tidak takut gagal, dan selalu mencari cara baru.</li>
-          <li><strong>Hubungan Kreativitas & Kewirausahaan:</strong> wirausaha sukses memanfaatkan kreativitas untuk menciptakan produk yang unik dan relevan.</li>
-          <li><strong>Latihan Growth Mindset:</strong> ubah pola pikir dari “tidak bisa” menjadi “belum bisa”, fokus pada proses belajar dan perbaikan terus-menerus.</li>
-        </ul>
-
-        <div class="mt-6">
-          <a href="#materi" class="btn">⬆️ Kembali ke Struktur Materi</a>
         </div>
       </div>
     </div>
@@ -189,10 +211,26 @@
             <p class="text-gray-200 text-sm">Startup edutech gagal, AI, pengguna merasa tidak cukup pintar...</p>
             <textarea id="jawaban2" class="w-full mt-2 p-2 bg-gray-800 text-white rounded h-24" placeholder="Jawaban Anda..."></textarea>
           </div>
-          <!-- ... tambahkan hingga 10 jika perlu, atau cukup tampilkan 2 sebagai contoh -->
+          <div class="border-l-4 border-yellow-400 pl-4">
+            <h5 class="font-bold text-yellow-300">Kasus 3 (C4 – Analisis)</h5>
+            <p class="text-gray-200 text-sm">UMKM kerajinan tangan tradisional kesulitan memasarkan produk...</p>
+            <textarea id="jawaban3" class="w-full mt-2 p-2 bg-gray-800 text-white rounded h-24" placeholder="Jawaban Anda..."></textarea>
+          </div>
+          <div class="border-l-4 border-yellow-400 pl-4">
+            <h5 class="font-bold text-yellow-300">Kasus 4 (C5 – Evaluasi)</h5>
+            <p class="text-gray-200 text-sm">Kafe dengan konsep ramah lingkungan tapi sepi pengunjung...</p>
+            <textarea id="jawaban4" class="w-full mt-2 p-2 bg-gray-800 text-white rounded h-24" placeholder="Jawaban Anda..."></textarea>
+          </div>
+          <div class="border-l-4 border-yellow-400 pl-4">
+            <h5 class="font-bold text-yellow-300">Kasus 5 (C6 – Kreasi)</h5>
+            <p class="text-gray-200 text-sm">Memanfaatkan teknologi untuk meningkatkan produktivitas petani kecil...</p>
+            <textarea id="jawaban5" class="w-full mt-2 p-2 bg-gray-800 text-white rounded h-24" placeholder="Jawaban Anda..."></textarea>
+          </div>
         </div>
 
-        <button onclick="alert('Fitur unduh PDF tersedia di file terpisah. Untuk versi lengkap, buka studi_kasus_hots_kreativitas_mindset.html')" class="btn mt-6">🖨️ Unduh Jawaban (PDF)</button>
+        <div class="text-center mt-8">
+          <a href="studi_kasus_hots_kreativitas_mindset.html" class="btn">🖨️ Lihat Semua Studi Kasus</a>
+        </div>
       </div>
     </div>
   </section>
@@ -225,8 +263,24 @@
             <p class="text-gray-200">Buat kartu profil tokoh yang sukses setelah gagal berkali-kali.</p>
           </div>
         </div>
-        <!-- ... tambahkan lainnya jika perlu -->
-        <a href="#aktivitas-lengkap" class="btn mt-4 inline-block">📋 Lihat Semua Aktivitas</a>
+        <div class="flex items-start">
+          <span class="text-yellow-400 font-bold mr-3">4.</span>
+          <div>
+            <h5 class="font-bold text-yellow-300">Analisis SWOT Usaha Lokal</h5>
+            <p class="text-gray-200">Pilih satu usaha lokal di sekitar sekolah, lalu lakukan analisis SWOT sederhana.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <span class="text-yellow-400 font-bold mr-3">5.</span>
+          <div>
+            <h5 class="font-bold text-yellow-300">Proyek Mini: "Temukan 1 ide produk dari masalah di lingkungan sekolah"</h5>
+            <p class="text-gray-200">Identifikasi masalah di lingkungan sekolah, lalu kembangkan ide produk/jasa untuk mengatasinya.</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-6">
+          <a href="aktivitas_kelas_kreativitas_mindset.html" class="btn">📋 Lihat Semua Aktivitas</a>
+        </div>
       </div>
     </div>
   </section>
@@ -238,7 +292,7 @@
       <p class="text-gray-200 mb-6 text-center">Kerjakan 20 soal pilihan ganda berikut!</p>
       <div class="bg-[#173366] p-6 rounded-2xl shadow-lg text-center">
         <p class="text-gray-200 mb-4">Soal mencakup level kognitif C4–C6 (Analisis, Evaluasi, Kreasi).</p>
-        <button onclick="alert('Latihan soal interaktif tersedia di file terpisah: latihan_soal_kreativitas_mindset.html')" class="btn">✅ Mulai Latihan</button>
+        <a href="latihan_soal_kreativitas_mindset.html" class="btn">✅ Mulai Latihan</a>
       </div>
     </div>
   </section>
@@ -246,7 +300,7 @@
   <!-- Refleksi -->
   <section id="refleksi" class="py-12 px-6 md:px-12 bg-[#122b55] text-center section" data-aos="fade-up">
     <p class="italic text-gray-100 text-lg">
-      “Kewirausahaan bukan sekadar mencari untung, tapi menciptakan solusi bagi masalah di sekitar kita.”
+      "Kewirausahaan bukan sekadar mencari untung, tapi menciptakan solusi bagi masalah di sekitar kita."
     </p>
     <p class="text-yellow-400 font-semibold mt-3">— Guru KIK SMK 17 Tegaldlimo</p>
   </section>
@@ -256,7 +310,7 @@
     <p>© 2025 SMK 17 Tegaldlimo | Kreativitas, Inovasi, dan Kewirausahaan</p>
   </footer>
 
-  <!-- Script untuk smooth scroll (opsional) -->
+  <!-- Script untuk smooth scroll -->
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
