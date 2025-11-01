@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BAB 4 - Analisis Peluang Usaha Sederhana - Kreativitas, Inovasi, dan Kewirausahaan" />
+  <title>BAB 4 - Analisis Peluang Usaha | KIK Kelas XI</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    body {
+      background-color: #0a1f44;
+      color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .highlight { color: #FFD700; }
+    .btn {
+      background-color: #FFD700;
+      color: #0a1f44;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+    }
+    .btn:hover {
+      background-color: #ffea7f;
+      transform: scale(1.05);
+    }
+    .btn-secondary {
+      background-color: #122b55;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+    }
+    .btn-secondary:hover {
+      background-color: #1e3a6e;
+    }
+    .concept-card {
+      background: linear-gradient(135deg, #122b55 0%, #1e3a6e 100%);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid #FFD700;
+    }
+    .swot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .swot-item {
+      background-color: #122b55;
+      padding: 20px;
+      border-radius: 10px;
+      border-top: 4px solid;
+    }
+    .strengths { border-top-color: #10B981; }
+    .weaknesses { border-top-color: #EF4444; }
+    .opportunities { border-top-color: #3B82F6; }
+    .threats { border-top-color: #F59E0B; }
+    .criteria-box {
+      background-color: #1e3a6e;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 4px solid #FFD700;
+    }
+    .factor-card {
+      background-color: #122b55;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+    }
+    .analysis-icon {
+      background-color: #FFD700;
+      color: #0a1f44;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body onload="AOS.init({duration: 900, once: true})">
+
+  <!-- Header -->
+  <header class="bg-[#081a36] text-white py-4 shadow-lg fixed w-full z-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+      <div class="flex items-center gap-4">
+        <img src="https://i.ibb.co.com/TDZ80yjQ/download.jpg" alt="Logo SMK 17 Tegaldlimo" class="w-12 h-12 rounded-full border-2 border-yellow-400" />
+        <h1 class="text-xl md:text-2xl font-bold text-yellow-400">SMK 17 TEGALDLIMO</h1>
+      </div>
+      <nav class="mt-2 md:mt-0">
+        <a href="index.html" class="text-gray-300 hover:text-yellow-400 px-3">🏠 Beranda</a>
+        <a href="#materi" class="text-gray-300 hover:text-yellow-400 px-3">📘 Materi</a>
+        <a href="#studi-kasus" class="text-gray-300 hover:text-yellow-400 px-3">🔍 Studi Kasus</a>
+        <a href="#aktivitas" class="text-gray-300 hover:text-yellow-400 px-3">🎯 Aktivitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-[#0c2552]">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-4" data-aos="fade-up">BAB 4: Analisis Peluang Usaha Sederhana</h1>
+      <p class="text-gray-300 text-lg max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        Mengidentifikasi dan mengevaluasi peluang bisnis dengan alat analisis yang praktis
+      </p>
+    </div>
+  </section>
+
+  <!-- Materi Utama -->
+  <section id="materi" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- Pengertian Peluang Usaha -->
+      <div class="concept-card" data-aos="fade-up">
+        <div class="flex items-start">
+          <div class="analysis-icon">💡</div>
+          <div>
+            <h2 class="text-2xl font-bold text-yellow-400 mb-4">Pengertian Peluang Usaha</h2>
+            <p class="text-gray-200 mb-4">
+              <strong>Peluang usaha</strong> adalah kesempatan atau situasi yang memungkinkan seseorang 
+              untuk memulai bisnis yang menguntungkan dengan memanfaatkan sumber daya yang dimiliki 
+              untuk memenuhi kebutuhan pasar.
+            </p>
+            <div class="bg-[#0a1f44] p-4 rounded-lg">
+              <h4 class="font-semibold text-yellow-400 mb-2">Ciri-ciri Peluang Usaha yang Baik:</h4>
+              <ul class="list-disc pl-5 text-gray-200 space-y-2">
+                <li>Memiliki pasar yang jelas dan cukup besar</li>
+                <li>Dapat menghasilkan keuntungan yang memadai</li>
+                <li>Sesuai dengan minat dan kemampuan wirausaha</li>
+                <li>Memiliki daya tahan dalam jangka panjang</li>
+                <li>Tidak bertentangan dengan hukum dan norma masyarakat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Faktor-faktor yang Mempengaruhi -->
+      <div class="concept-card" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">📈 Faktor-faktor yang Mempengaruhi Peluang Usaha</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="factor-card">
+            <h4 class="font-semibold text-yellow-300 mb-2">🔧 Faktor Internal</h4>
+            <ul class="list-disc pl-5 text-gray-200 text-sm space-y-1">
+              <li>Pengetahuan dan keterampilan</li>
+              <li>Pengalaman bisnis</li>
+              <li>Modal yang dimiliki</li>
+              <li>Jaringan dan relasi</li>
+              <li>Kreativitas dan inovasi</li>
+            </ul>
+          </div>
+          
+          <div class="factor-card">
+            <h4 class="font-semibold text-yellow-300 mb-2">🌍 Faktor Eksternal</h4>
+            <ul class="list-disc pl-5 text-gray-200 text-sm space-y-1">
+              <li>Perkembangan teknologi</li>
+              <li>Perubahan tren masyarakat</li>
+              <li>Kebijakan pemerintah</li>
+              <li>Kondisi ekonomi</li>
+              <li>Persaingan bisnis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-4 p-4 bg-[#0a1f44] rounded-lg">
+          <h4 class="font-semibold text-yellow-400 mb-2">Sumber Peluang Usaha:</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-gray-200 text-sm">
+            <div>
+              <strong>Kebutuhan yang belum terpenuhi</strong>
+              <p>Masalah sehari-hari yang butuh solusi</p>
+            </div>
+            <div>
+              <strong>Perkembangan teknologi</strong>
+              <p>Inovasi yang menciptakan pasar baru</p>
+            </div>
+            <div>
+              <strong>Perubahan demografi</strong>
+              <p>Perubahan populasi dan kebutuhan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analisis SWOT -->
+      <div class="concept-card" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">🎯 Analisis SWOT Sederhana</h2>
+        <p class="text-gray-200 mb-4">
+          SWOT adalah alat analisis strategis yang digunakan untuk mengevaluasi <strong>Strengths</strong> (Kekuatan), 
+          <strong>Weaknesses</strong> (Kelemahan), <strong>Opportunities</strong> (Peluang), dan <strong>Threats</strong> (Ancaman) 
+          dari suatu usaha atau ide bisnis.
+        </p>
+
+        <div class="swot-grid">
+          <!-- Strengths -->
+          <div class="swot-item strengths">
+            <h3 class="text-lg font-bold text-green-400 mb-3">💪 STRENGTHS (Kekuatan)</h3>
+            <p class="text-gray-200 text-sm mb-2">Faktor internal yang menguntungkan:</p>
+            <ul class="list-disc pl-5 text-gray-200 text-sm space-y-1">
+              <li>Keahlian khusus yang dimiliki</li>
+              <li>Sumber daya unik</li>
+              <li>Reputasi yang baik</li>
+              <li>Lokasi strategis</li>
+              <li>Harga kompetitif</li>
+            </ul>
+          </div>
+
+          <!-- Weaknesses -->
+          <div class="swot-item weaknesses">
+            <h3 class="text-lg font-bold text-red-400 mb-3">⚠️ WEAKNESSES (Kelemahan)</h3>
+            <p class="text-gray-200 text-sm mb-2">Faktor internal yang merugikan:</p>
+            <ul class="list-disc pl-5 text-gray-200 text-sm space-y-1">
+              <li>Keterbatasan modal</li>
+              <li>Kurang pengalaman</li>
+              <li>Jaringan terbatas</li>
+              <li>Teknologi usang</li>
+              <li>Reputasi buruk</li>
+            </ul>
+          </div>
+
+          <!-- Opportunities -->
+          <div class="swot-item opportunities">
+            <h3 class="text-lg font-bold text-blue-400 mb-3">🚀 OPPORTUNITIES (Peluang)</h3>
+            <p class="text-gray-200 text-sm mb-2">Faktor eksternal yang menguntungkan:</p>
+            <ul class="list-disc pl-5 text-gray-200 text-sm space-y-1">
+              <li>Pasar yang berkembang</li>
+              <li>Teknologi baru</li>
+              <li>Perubahan regulasi</li>
+              <li>Kebutuhan baru</li>
+              <li>Kerjasama potensial</li>
+            </ul>
+          </div>
+
+          <!-- Threats -->
+          <div class="swot-item threats">
+            <h3 class="text-lg font-bold text-yellow-400 mb-3">🌪️ THREATS (Ancaman)</h3>
+            <p class="text-gray-200 text-sm mb-2">Faktor eksternal yang merugikan:</p>
+            <ul class="list-disc pl-5 text-gray-200 text-sm space-y-1">
+              <li>Kompetisi ketat</li>
+              <li>Perubahan ekonomi</li>
+              <li>Regulasi baru</li>
+              <li>Perubahan tren</li>
+              <li>Bencana alam</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 p-4 bg-[#0a1f44] rounded-lg">
+          <h4 class="font-semibold text-yellow-400 mb-2">Contoh Analisis SWOT: Warung Kopi Modern</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong class="text-green-400">Kekuatan:</strong>
+              <p class="text-gray-200">Lokasi dekat kampus, harga terjangkau, wifi gratis</p>
+            </div>
+            <div>
+              <strong class="text-red-400">Kelemahan:</strong>
+              <p class="text-gray-200">Modal terbatas, merek belum dikenal, menu terbatas</p>
+            </div>
+            <div>
+              <strong class="text-blue-400">Peluang:</strong>
+              <p class="text-gray-200">Tren nongkrong mahasiswa, kebutuhan ruang belajar</p>
+            </div>
+            <div>
+              <strong class="text-yellow-400">Ancaman:</strong>
+              <p class="text-gray-200">Banyak kompetitor, fluktuasi harga biji kopi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kriteria Peluang Usaha yang Baik -->
+      <div class="concept-card" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">✅ Kriteria Peluang Usaha yang Baik</h2>
+        
+        <div class="space-y-4">
+          <div class="criteria-box">
+            <h4 class="font-semibold text-yellow-300 mb-2">1. Permintaan Pasar yang Nyata</h4>
+            <p class="text-gray-200 text-sm">
+              Ada cukup banyak orang yang benar-benar membutuhkan dan bersedia membayar untuk produk/jasa tersebut.
+              Lakukan survei kecil untuk memvalidasi kebutuhan pasar.
+            </p>
+          </div>
+
+          <div class="criteria-box">
+            <h4 class="font-semibold text-yellow-300 mb-2">2. Margin Keuntungan yang Memadai</h4>
+            <p class="text-gray-200 text-sm">
+              Bisnis harus dapat menghasilkan keuntungan setelah memperhitungkan semua biaya. 
+              Idealnya, margin keuntungan minimal 20-30% dari harga jual.
+            </p>
+          </div>
+
+          <div class="criteria-box">
+            <h4 class="font-semibold text-yellow-300 mb-2">3. Sesuai dengan Kemampuan dan Minat</h4>
+            <p class="text-gray-200 text-sm">
+              Peluang usaha harus sesuai dengan keterampilan, pengetahuan, dan minat pribadi. 
+              Passion akan membantu bertahan dalam menghadapi tantangan.
+            </p>
+          </div>
+
+          <div class="criteria-box">
+            <h4 class="font-semibold text-yellow-300 mb-2">4. Waktu yang Tepat</h4>
+            <p class="text-gray-200 text-sm">
+              Peluang muncul di saat yang tepat. Perhatikan tren, musim, dan kondisi ekonomi 
+              untuk menentukan timing yang optimal.
+            </p>
+          </div>
+
+          <div class="criteria-box">
+            <h4 class="font-semibold text-yellow-300 mb-2">5. Memiliki Keunggulan Kompetitif</h4>
+            <p class="text-gray-200 text-sm">
+              Harus ada sesuatu yang membedakan dari pesaing, baik dalam hal harga, kualitas, 
+              pelayanan, atau inovasi.
+            </p>
+          </div>
+
+          <div class="criteria-box">
+            <h4 class="font-semibold text-yellow-300 mb-2">6. Berkelanjutan</h4>
+            <p class="text-gray-200 text-sm">
+              Bisnis harus dapat bertahan dalam jangka panjang, tidak hanya sesaat. 
+              Pertimbangkan dampak lingkungan dan sosial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek Mini -->
+      <div class="bg-[#122b55] p-8 rounded-2xl shadow-xl mt-10" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">📋 Proyek Mini: "Analisis Peluang Usaha di Lingkungan Sekitar"</h2>
+        <p class="text-gray-200 mb-4">
+          Identifikasi dan analisis satu peluang usaha potensial di sekitar lingkungan sekolah atau rumah Anda.
+        </p>
+        
+        <div class="bg-[#0a1f44] p-6 rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-yellow-300 mb-3">Langkah-langkah Proyek:</h3>
+          <ol class="list-decimal pl-5 text-gray-200 space-y-3">
+            <li><strong>Observasi (30 menit):</strong> Identifikasi 3 peluang usaha potensial di lingkungan sekitar</li>
+            <li><strong>Seleksi (15 menit):</strong> Pilih 1 peluang yang paling menjanjikan berdasarkan kriteria</li>
+            <li><strong>Analisis SWOT (25 menit):</strong> Buat analisis SWOT untuk peluang yang dipilih</li>
+            <li><strong>Evaluasi Kriteria (20 menit):</strong> Nilai peluang berdasarkan 6 kriteria peluang usaha baik</li>
+            <li><strong>Kesimpulan (10 menit):</strong> Buat rekomendasi apakah peluang layak dijalankan</li>
+          </ol>
+        </div>
+        
+        <div class="text-center mt-6">
+          <button onclick="downloadTemplate()" class="btn">📥 Unduh Template Analisis</button>
+        </div>
+      </div>
+
+      <!-- Tombol Navigasi -->
+      <div class="flex flex-wrap justify-center gap-4 mt-10" data-aos="fade-up">
+        <a href="index.html" class="btn">🏠 Kembali ke Beranda</a>
+        <a href="bab3_eksplorasi_ide.html" class="btn btn-secondary">⬅️ BAB 3</a>
+        <a href="bab5_pengembangan_ide.html" class="btn btn-secondary">BAB 5 ➡️</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studi Kasus -->
+  <section id="studi-kasus" class="py-16 px-6 bg-[#0c2552]">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center" data-aos="fade-up">🔍 Studi Kasus Analisis Peluang Usaha</h2>
+      
+      <div class="bg-[#173366] p-6 rounded-2xl shadow-lg" data-aos="fade-up">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-yellow-300 mb-3">Kasus 1: Kopi Kenangan - Dari Gerai Sederhana menjadi Unicorn</h3>
+          <p class="text-gray-200 mb-4">
+            Kopi Kenangan dimulai dari gerai kecil di Jakarta dengan modal terbatas, namun berhasil 
+            mengidentifikasi peluang di pasar kopi affordable premium untuk kalangan muda.
+          </p>
+          <div class="bg-[#122b55] p-4 rounded-lg">
+            <h4 class="font-semibold text-yellow-400 mb-2">Analisis Peluang:</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <strong class="text-green-400">Kekuatan:</strong>
+                <ul class="list-disc pl-5 text-gray-200 text-sm">
+                  <li>Harga terjangkau untuk kualitas premium</li>
+                  <li>Lokasi strategis di area komersial</li>
+                  <li>Branding yang menarik bagi anak muda</li>
+                </ul>
+              </div>
+              <div>
+                <strong class="text-blue-400">Peluang yang Dijangkau:</strong>
+                <ul class="list-disc pl-5 text-gray-200 text-sm">
+                  <li>Celah pasar antara kopi gerobakan dan Starbucks</li>
+                  <li>Tren konsumsi kopi yang meningkat</li>
+                  <li>Pertumbuhan kelas menengah muda</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-yellow-300 mb-3">Kasus 2: J&T Express - Mengisi Kebutuhan Logistik yang Tumbuh Pesat</h3>
+          <p class="text-gray-200 mb-4">
+            J&T Express masuk ke Indonesia saat e-commerce sedang booming dan identifikasi kebutuhan 
+            layanan pengiriman yang cepat dan terjangkau.
+          </p>
+          <div class="bg-[#122b55] p-4 rounded-lg">
+            <h4 class="font-semibold text-yellow-400 mb-2">Analisis Peluang:</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <strong class="text-green-400">Kriteria Terpenuhi:</strong>
+                <ul class="list-disc pl-5 text-gray-200 text-sm">
+                  <li>Permintaan pasar yang sangat besar</li>
+                  <li>Waktu yang tepat (e-commerce booming)</li>
+                  <li>Keunggulan kompetitif (harga dan kecepatan)</li>
+                </ul>
+              </div>
+              <div>
+                <strong class="text-blue-400">Faktor Eksternal yang Dimanfaatkan:</strong>
+                <ul class="list-disc pl-5 text-gray-200 text-sm">
+                  <li>Revolusi digital dan e-commerce</li>
+                  <li>Pertumbuhan UMKM online</li>
+                  <li>Kebutuhan pengiriman ke seluruh Indonesia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <a href="studi_kasus_hots_kreativitas_mindset.html" class="btn">📚 Lihat Semua Studi Kasus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aktivitas Kelas -->
+  <section id="aktivitas" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center" data-aos="fade-up">🎯 Aktivitas Kelas</h2>
+      
+      <div class="bg-[#173366] p-6 rounded-2xl shadow-lg space-y-6" data-aos="fade-up">
+        <div>
+          <h3 class="text-xl font-bold text-yellow-300 mb-2">Aktivitas 1: "SWOT Analysis Challenge"</h3>
+          <p class="text-gray-200 mb-3">
+            Bagilah kelas menjadi kelompok. Setiap kelompok menganalisis bisnis lokal yang sudah ada 
+            (warung makan, toko kelontong, dll) menggunakan analisis SWOT.
+          </p>
+          <div class="bg-[#122b55] p-3 rounded-lg">
+            <p class="text-gray-200 text-sm">
+              <strong>Durasi:</strong> 45 menit (15 observasi + 30 analisis)
+            </p>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold text-yellow-300 mb-2">Aktivitas 2: "Peluang Usaha Pitch"</h3>
+          <p class="text-gray-200 mb-3">
+            Setiap siswa mengidentifikasi 1 peluang usaha sederhana dan mempresentasikan dalam 3 menit 
+            dengan menjelaskan analisis SWOT dan kriteria yang terpenuhi.
+          </p>
+          <div class="bg-[#122b55] p-3 rounded-lg">
+            <p class="text-gray-200 text-sm">
+              <strong>Format:</strong> 3 menit presentasi + 2 menit Q&A
+            </p>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold text-yellow-300 mb-2">Aktivitas 3: "Kriteria Evaluasi Game"</h3>
+          <p class="text-gray-200">
+            Guru memberikan 5 contoh ide usaha. Kelompok menilai setiap ide berdasarkan 6 kriteria 
+            peluang usaha baik dan memberikan skor. Diskusikan hasilnya.
+          </p>
+        </div>
+        
+        <div class="text-center mt-6">
+          <a href="aktivitas_kelas_kreativitas_mindset.html" class="btn">📋 Lihat Semua Aktivitas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latihan Soal -->
+  <section id="latihan" class="py-16 px-6 bg-[#0c2552]">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center" data-aos="fade-up">📝 Latihan Soal</h2>
+      
+      <div class="bg-[#173366] p-6 rounded-2xl shadow-lg" data-aos="fade-up">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-yellow-300 mb-4">Soal Pilihan Ganda</h3>
+          
+          <div class="mb-6">
+            <p class="text-gray-200 mb-3 font-semibold">1. Manakah yang BUKAN termasuk faktor internal yang mempengaruhi peluang usaha?</p>
+            <div class="space-y-2 ml-4">
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q1" class="mr-2"> Pengetahuan dan keterampilan wirausaha
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q1" class="mr-2"> Modal yang dimiliki
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q1" class="mr-2"> Perkembangan teknologi terkini
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q1" class="mr-2"> Jaringan dan relasi bisnis
+              </label>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <p class="text-gray-200 mb-3 font-semibold">2. Dalam analisis SWOT, "banyaknya kompetitor sejenis" termasuk dalam kategori:</p>
+            <div class="space-y-2 ml-4">
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q2" class="mr-2"> Strengths (Kekuatan)
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q2" class="mr-2"> Weaknesses (Kelemahan)
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q2" class="mr-2"> Opportunities (Peluang)
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q2" class="mr-2"> Threats (Ancaman)
+              </label>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <p class="text-gray-200 mb-3 font-semibold">3. Manakah yang BUKAN kriteria peluang usaha yang baik?</p>
+            <div class="space-y-2 ml-4">
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q3" class="mr-2"> Memiliki permintaan pasar yang nyata
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q3" class="mr-2"> Margin keuntungan yang memadai
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q3" class="mr-2"> Tidak memerlukan modal sama sekali
+              </label>
+              <label class="flex items-center text-gray-200">
+                <input type="radio" name="q3" class="mr-2"> Sesuai dengan kemampuan dan minat
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <a href="latihan_soal_kreativitas_mindset.html" class="btn">✅ Kerjakan Semua Latihan Soal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#081a36] text-center text-gray-400 py-6 mt-10">
+    <p>© 2025 SMK 17 Tegaldlimo | Kreativitas, Inovasi, dan Kewirausahaan - BAB 4</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Fungsi untuk template (simulasi)
+    function downloadTemplate() {
+      alert("Template analisis peluang usaha akan diunduh. Dalam implementasi nyata, ini akan mengunduh file PDF.");
+      // Dalam implementasi nyata, ini akan mengarahkan ke file PDF yang dapat diunduh
+      // window.location.href = "template_analisis_peluang.pdf";
+    }
+
+    // Smooth scroll untuk navigasi internal
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
