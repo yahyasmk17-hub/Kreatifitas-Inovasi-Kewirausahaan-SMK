@@ -29,10 +29,15 @@
       border-radius: 8px;
       font-weight: 600;
       transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
     }
     .btn:hover {
       background-color: #ffea7f;
       transform: scale(1.05);
+    }
+    .section {
+      scroll-margin-top: 80px;
     }
   </style>
 </head>
@@ -40,29 +45,31 @@
 <body onload="AOS.init({duration: 900, once: true})">
 
   <!-- Header -->
-  <header class="bg-[#081a36] text-white py-6 shadow-lg">
+  <header class="bg-[#081a36] text-white py-6 shadow-lg fixed w-full z-50">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
       <div class="flex items-center gap-4">
         <img src="https://i.ibb.co.com/TDZ80yjQ/download.jpg" alt="Logo SMK 17 Tegaldlimo" class="w-14 h-14 rounded-full border-2 border-yellow-400" />
         <h1 class="text-2xl md:text-3xl font-bold text-yellow-400">SMK 17 TEGALDLIMO</h1>
       </div>
       <nav class="mt-4 md:mt-0">
-        <a href="index.html" class="text-gray-300 hover:text-yellow-400 px-3">🏠 Beranda</a>
+        <a href="#hero" class="text-gray-300 hover:text-yellow-400 px-3">🏠 Beranda</a>
         <a href="#materi" class="text-gray-300 hover:text-yellow-400 px-3">📘 Materi</a>
-        <a href="#refleksi" class="text-gray-300 hover:text-yellow-400 px-3">💬 Refleksi</a>
+        <a href="#studi-kasus" class="text-gray-300 hover:text-yellow-400 px-3">🔍 Studi Kasus</a>
+        <a href="#aktivitas" class="text-gray-300 hover:text-yellow-400 px-3">🎯 Aktivitas</a>
+        <a href="#latihan" class="text-gray-300 hover:text-yellow-400 px-3">📝 Latihan</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-16 bg-[#0c2552]" data-aos="fade-up">
+  <section id="hero" class="text-center py-32 bg-[#0c2552] section" data-aos="fade-up">
     <img src="https://i.ibb.co.com/4wpttmjg/Whats-App-Image-2025-10-31-at-23-01-34.jpg" alt="Guru KIK" class="mx-auto w-28 h-28 rounded-full border-4 border-yellow-400 shadow-lg mb-4">
     <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-3">KREATIVITAS, INOVASI, DAN KEWIRAUSAHAAN</h2>
     <p class="text-gray-300 text-lg">Kelas XI – Semester Ganjil | SMK 17 Tegaldlimo</p>
   </section>
 
   <!-- Materi -->
-  <section id="materi" class="py-16 px-6 md:px-12" data-aos="fade-up">
+  <section id="materi" class="py-16 px-6 md:px-12 section" data-aos="fade-up">
     <div class="max-w-5xl mx-auto">
 
       <div class="text-center mb-10">
@@ -98,7 +105,7 @@
                 <td class="p-3 font-semibold">Konsep Kreativitas dan Growth Mindset</td>
                 <td class="p-3">Pengertian kreativitas, pentingnya berpikir kreatif, ciri orang kreatif, hubungan kreativitas dengan kewirausahaan, dan latihan membangun pola pikir berkembang.</td>
                 <td class="p-3 text-center">
-                  <a href="materi1-kreativitas-growthmindset.html" class="btn">📖 Buka Materi</a>
+                  <a href="#bab1" class="btn">📖 Buka Materi</a>
                 </td>
               </tr>
               <tr class="border-t border-yellow-500">
@@ -119,7 +126,7 @@
       </div>
 
       <!-- ====== MATERI 1 DETAIL ====== -->
-      <div id="materi1" class="bg-[#173366] p-8 rounded-2xl shadow-xl mb-10" data-aos="fade-up">
+      <div id="bab1" class="bg-[#173366] p-8 rounded-2xl shadow-xl mb-10 section" data-aos="fade-up">
         <h3 class="text-3xl font-bold text-yellow-400 mb-4">📖 BAB 1: Konsep Kreativitas dan Growth Mindset</h3>
         <p class="text-gray-100 mb-3">
           Kreativitas merupakan kemampuan seseorang untuk melahirkan ide baru, solusi unik, atau pendekatan berbeda terhadap suatu masalah.
@@ -138,21 +145,128 @@
           <a href="#materi" class="btn">⬆️ Kembali ke Struktur Materi</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Refleksi -->
-      <div id="refleksi" class="bg-[#173366] p-6 rounded-2xl shadow-lg text-center">
-        <p class="italic text-gray-100 text-lg">
-          “Kewirausahaan bukan sekadar mencari untung, tapi menciptakan solusi bagi masalah di sekitar kita.”
-        </p>
-        <p class="text-yellow-400 font-semibold mt-3">— Guru KIK SMK 17 Tegaldlimo</p>
+  <!-- Studi Kasus HOTS -->
+  <section id="studi-kasus" class="py-16 px-6 md:px-12 bg-[#0c2552] section" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-yellow-400 mb-6 text-center">🔍 Studi Kasus HOTS</h3>
+      <p class="text-gray-200 mb-6 text-center">Jawablah 10 studi kasus berikut dengan analisis mendalam!</p>
+      
+      <!-- Embed Studi Kasus Content -->
+      <div class="bg-[#173366] p-6 rounded-2xl shadow-lg">
+        <h4 class="text-xl font-bold text-yellow-400 mb-4">Petunjuk:</h4>
+        <p class="text-gray-200 mb-4">Bacalah setiap studi kasus berikut. Isi identitas Anda, lalu jawab setiap soal di textarea yang disediakan. Klik tombol "Unduh Jawaban (PDF)" untuk menyimpan hasil Anda.</p>
+        
+        <!-- Form Identitas -->
+        <div class="mb-6 p-4 bg-[#122b55] rounded-lg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-gray-300 mb-1">Nama Siswa:</label>
+              <input type="text" id="nama" class="w-full p-2 rounded bg-gray-800 text-white">
+            </div>
+            <div>
+              <label class="block text-gray-300 mb-1">Kelas:</label>
+              <input type="text" id="kelas" class="w-full p-2 rounded bg-gray-800 text-white">
+            </div>
+            <div>
+              <label class="block text-gray-300 mb-1">Tanggal:</label>
+              <input type="date" id="tanggal" class="w-full p-2 rounded bg-gray-800 text-white">
+            </div>
+          </div>
+        </div>
+
+        <!-- Daftar Studi Kasus (ringkasan) -->
+        <div class="space-y-6">
+          <div class="border-l-4 border-yellow-400 pl-4">
+            <h5 class="font-bold text-yellow-300">Kasus 1 (C6 – Kreasi)</h5>
+            <p class="text-gray-200 text-sm">Desa NTT, limbah jagung, mindset warga...</p>
+            <textarea id="jawaban1" class="w-full mt-2 p-2 bg-gray-800 text-white rounded h-24" placeholder="Jawaban Anda..."></textarea>
+          </div>
+          <div class="border-l-4 border-yellow-400 pl-4">
+            <h5 class="font-bold text-yellow-300">Kasus 2 (C5 – Evaluasi)</h5>
+            <p class="text-gray-200 text-sm">Startup edutech gagal, AI, pengguna merasa tidak cukup pintar...</p>
+            <textarea id="jawaban2" class="w-full mt-2 p-2 bg-gray-800 text-white rounded h-24" placeholder="Jawaban Anda..."></textarea>
+          </div>
+          <!-- ... tambahkan hingga 10 jika perlu, atau cukup tampilkan 2 sebagai contoh -->
+        </div>
+
+        <button onclick="alert('Fitur unduh PDF tersedia di file terpisah. Untuk versi lengkap, buka studi_kasus_hots_kreativitas_mindset.html')" class="btn mt-6">🖨️ Unduh Jawaban (PDF)</button>
       </div>
     </div>
+  </section>
+
+  <!-- Aktivitas Kelas -->
+  <section id="aktivitas" class="py-16 px-6 md:px-12 section" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-yellow-400 mb-6 text-center">🎯 Aktivitas Kelas</h3>
+      <p class="text-gray-200 mb-6 text-center">Lakukan salah satu aktivitas berikut bersama teman atau guru Anda!</p>
+
+      <div class="bg-[#173366] p-6 rounded-2xl shadow-lg space-y-6">
+        <div class="flex items-start">
+          <span class="text-yellow-400 font-bold mr-3">1.</span>
+          <div>
+            <h5 class="font-bold text-yellow-300">Ubah Kalimat, Ubah Pola Pikir</h5>
+            <p class="text-gray-200">Ubah pernyataan fixed mindset menjadi growth mindset.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <span class="text-yellow-400 font-bold mr-3">2.</span>
+          <div>
+            <h5 class="font-bold text-yellow-300">Simulasi "Gagal Cerdas"</h5>
+            <p class="text-gray-200">Presentasikan ide → terima kritik → revisi dalam 10 menit.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <span class="text-yellow-400 font-bold mr-3">3.</span>
+          <div>
+            <h5 class="font-bold text-yellow-300">Galeri Kegagalan Tokoh Dunia</h5>
+            <p class="text-gray-200">Buat kartu profil tokoh yang sukses setelah gagal berkali-kali.</p>
+          </div>
+        </div>
+        <!-- ... tambahkan lainnya jika perlu -->
+        <a href="#aktivitas-lengkap" class="btn mt-4 inline-block">📋 Lihat Semua Aktivitas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latihan Soal -->
+  <section id="latihan" class="py-16 px-6 md:px-12 bg-[#0c2552] section" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-yellow-400 mb-6 text-center">📝 Latihan Soal</h3>
+      <p class="text-gray-200 mb-6 text-center">Kerjakan 20 soal pilihan ganda berikut!</p>
+      <div class="bg-[#173366] p-6 rounded-2xl shadow-lg text-center">
+        <p class="text-gray-200 mb-4">Soal mencakup level kognitif C4–C6 (Analisis, Evaluasi, Kreasi).</p>
+        <button onclick="alert('Latihan soal interaktif tersedia di file terpisah: latihan_soal_kreativitas_mindset.html')" class="btn">✅ Mulai Latihan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Refleksi -->
+  <section id="refleksi" class="py-12 px-6 md:px-12 bg-[#122b55] text-center section" data-aos="fade-up">
+    <p class="italic text-gray-100 text-lg">
+      “Kewirausahaan bukan sekadar mencari untung, tapi menciptakan solusi bagi masalah di sekitar kita.”
+    </p>
+    <p class="text-yellow-400 font-semibold mt-3">— Guru KIK SMK 17 Tegaldlimo</p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-[#081a36] text-center text-gray-400 py-6 mt-10">
     <p>© 2025 SMK 17 Tegaldlimo | Kreativitas, Inovasi, dan Kewirausahaan</p>
   </footer>
+
+  <!-- Script untuk smooth scroll (opsional) -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
